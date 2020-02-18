@@ -1,0 +1,38 @@
+* {
+    border: red solid 2px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    
+    text-align: center;
+}
+
+body {
+    background: white;    
+}
+
+.searchinput {
+    padding: 16px 0;
+}
+
+header {
+    
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 4%, rgba(103,141,163,0.16850490196078427) 100%);
+    color: #4e4e4e;
+    text-align: center;
+    font-size: 32px;
+    padding: 80px 0;
+}
+
+main {
+    
+    display: inline-block;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 32px;
+
+}
