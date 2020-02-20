@@ -1,74 +1,75 @@
 * {
-    /*border: red solid 2px;*/
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    
-    text-align: center;
+  /*border: red solid 2px;*/
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+
+  text-align: center;
 }
 
 body {
-    background: white;    
+  background: white;
 }
 
 h1 {
-    font-family: 'Indie Flower', cursive;
-    font-size: 40px;
+  font-family: "Indie Flower", cursive;
+  font-size: 40px;
 }
 
 .searchinput {
-    padding: 24px 0 36px;
+  padding: 24px 0 36px;
 }
 
 header {
-    
-    background: rgb(255,255,255);
-    background: linear-gradient(0deg, rgba(255,255,255,1) 4%, rgba(103,141,163,0.16850490196078427) 100%);
-    color: #4e4e4e;
-    text-align: center;
-    
-    padding: 80px 0;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 4%,
+    rgba(103, 141, 163, 0.16850490196078427) 100%
+  );
+  color: #4e4e4e;
+  text-align: center;
+
+  padding: 80px 0;
 }
 
 input {
-    width: 472px;
-    border-radius: 4px;
-    font-size: 16pt;
-    padding: 12px;
-    text-align: left;
-    border-style: solid;
-    border-color: lightgray;
-    color: #A9A9A9;
+  width: 472px;
+  border-radius: 4px;
+  font-size: 16pt;
+  padding: 12px;
+  text-align: left;
+  border-style: solid;
+  border-color: lightgray;
+  color: #a9a9a9;
 }
 
 main {
-    
-    display: inline-block;
+  display: inline-block;
 }
 
 .grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-gap: 64px;
-
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 64px;
 }
 
 .lb-cancel {
-    background: url(../js/lightbox/loading.gif) no-repeat;
+  background: url(../js/lightbox/loading.gif) no-repeat;
 }
 
 .lb-nav a.lb-prev {
-    background: url(../js/lightbox/prev.png) left 48% no-repeat;
+  background: url(../js/lightbox/prev.png) left 48% no-repeat;
 }
 
 .lb-nav a.lb-next {
-    background: url(../js/lightbox/next.png) right 48% no-repeat;
+  background: url(../js/lightbox/next.png) right 48% no-repeat;
 }
 
 .lb-data .lb-close {
-    background: url(../js/lightbox/close.png) top right no-repeat;
+  background: url(../js/lightbox/close.png) top right no-repeat;
 }
 
 .lb-data .lb-caption {
-    font-size: 16px;
+  font-size: 16px;
 }
