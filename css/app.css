@@ -15,7 +15,7 @@ main {
 h1 {
   font-family: "Indie Flower", cursive;
   font-size: 40px;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .searchinput {
@@ -25,13 +25,8 @@ h1 {
 }
 
 header {
-  background: rgb(255, 255, 255);
-  background: linear-gradient(
-    0deg,
-    rgba(255, 255, 255, 1) 4%,
-    rgba(103, 141, 163, 0.16850490196078427) 100%
-  );
-  color: #4e4e4e;
+  
+  color: #0f4c81;
   text-align: center;
 
   padding: 80px 32px;
@@ -39,20 +34,29 @@ header {
 
 input {
   width: 100%;
-  border-radius: 4px;
   font-size: 16pt;
   padding: 12px;
   text-align: left;
   border-style: solid;
-  border-color: lightgray;
-  border-radius: 8px;
+  border-color: #efefef;
+  border-radius: 12px;
   color: #a9a9a9;
+  transition: .5s all;
+}
+
+::placeholder {
+  color: #ababab;
+}
+
+input:hover {
+  border-color: #0f4c81;
+  
 }
 
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 16px;
+  grid-gap: 32px;
 }
 
 img {
@@ -85,9 +89,25 @@ img {
   *********************************/
   
   @media (min-width: 768px) {
-    
+    .searchinput {
+      display: flex;
+      justify-content: center;
+      padding-bottom: 48px;
+    }
+    input {
+      max-width: 360px;
+    }
+    .grid-container {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    img {
+      max-width: 200px;
+      max-height: 200px
+    };
   }
   
   @media (min-width: 1024px) {
-    
+    .grid-container {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
   }
