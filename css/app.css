@@ -8,13 +8,20 @@ body {
   background: white;
 }
 
+main {
+  padding: 32px;
+}
+
 h1 {
   font-family: "Indie Flower", cursive;
   font-size: 40px;
+  font-weight: 600;
 }
 
 .searchinput {
-  padding: 24px 0 36px;
+  padding-bottom: 24px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 header {
@@ -27,28 +34,30 @@ header {
   color: #4e4e4e;
   text-align: center;
 
-  padding: 80px 0;
+  padding: 80px 32px;
 }
 
 input {
-  width: 472px;
+  width: 100%;
   border-radius: 4px;
   font-size: 16pt;
   padding: 12px;
   text-align: left;
   border-style: solid;
   border-color: lightgray;
+  border-radius: 8px;
   color: #a9a9a9;
-}
-
-main {
-  display: inline-block;
 }
 
 .grid-container {
   display: grid;
-  grid-template-columns: auto auto auto auto;
-  grid-gap: 64px;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 16px;
+}
+
+img {
+  max-height: 130px;
+  max-width: 130px;
 }
 
 .lb-cancel {
@@ -70,3 +79,15 @@ main {
 .lb-data .lb-caption {
   font-size: 16px;
 }
+
+/*********************************
+  * BREAKPOINTS
+  *********************************/
+  
+  @media (min-width: 768px) {
+    
+  }
+  
+  @media (min-width: 1024px) {
+    
+  }
